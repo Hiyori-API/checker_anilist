@@ -1,0 +1,5 @@
+.env
+test.php
+src/test.json
+src/event.log
+vendor

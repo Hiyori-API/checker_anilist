@@ -1,0 +1,26 @@
+{
+    "name": "hiyori/checker_anilist",
+    "description": "Fetches anime metadata from anilist",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Irfan",
+            "email": "irfan.dahir1037@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "CheckerAnilist\\": [
+                "src"
+            ]
+        }
+    },
+    "require": {
+        "mongodb/mongodb": "^1.5",
+        "guzzlehttp/guzzle": "^6.5",
+        "symfony/dotenv": "^5.0",
+        "ext-json": "*",
+        "monolog/monolog": "^2.0"
+    }
+}
