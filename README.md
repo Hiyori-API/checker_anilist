@@ -2,6 +2,8 @@
 
 A "Checker" is a microservice for the Hiyori DB API.
 
+Work in progress.
+
 ## Prerequisites
 - PHP 7.2+
 - MongoDB (or just the connection string)
@@ -31,6 +33,13 @@ $checker = new \CheckerAnilist\Anilist();
 $checker->start();
 ```
 
+## Features
+1. Rate Limit detector
+2. Some configuration
+
+## Todo
+1. Better configuration
+2. Complete CLI-fication
 
 ## Metadata Model
 1. AniList ID

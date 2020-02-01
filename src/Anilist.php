@@ -152,12 +152,10 @@ class Anilist
             $node = $this->responseBody->data->Page->ANIME;
             foreach ($node as $nodeItem) {
 
-                // todo calculate end reach probability
+                // todo calculate end reach probability if provided with required flag
                 $this->database[] = Parser\AnimeParser::parse($nodeItem);
-
             }
 
-            // todo autosave
             if (count($this->database) >= $this->autosave) {
                 $this->push();
 
