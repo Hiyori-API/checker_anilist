@@ -30,3 +30,25 @@ require_once __DIR__.'/vendor/autoload.php';
 $checker = new \CheckerAnilist\Anilist();
 $checker->start();
 ```
+
+
+## Metadata Model
+1. AniList ID
+2. MyAnimeList ID
+3. Title English
+4. Title Romaji
+5. Title Native
+6. Episodes
+7. Start Date (YY/MM/DD)
+8. End Date (YY/MM/DD)
+9. Season
+10. Year
+11. Type (e.g "TV", "OVA", "Movie", etc)
+12. Source (e.g "Manga", "Novel", "Original", etc)
+13. External Links
+    a. ID
+    b. Site Title
+    c. Site URl 
+
+## Note
+The meta data that is collected is required to generate a confidence score between multiple platforms for the same resource. This is required to generate a universal resource ID only and the final database will be excluding most of the data that has been parsed. All data that is collected is in public domain.
